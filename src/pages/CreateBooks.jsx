@@ -18,7 +18,7 @@ const CreateBooks = () => {
     };
     setLoading(true);
     axios
-      .post(`${process.env.BASE_URL}/books`, data)
+      .post('https://bookstore-backend-vtm8.onrender.com/books', data)
       .then(() => {
         setLoading(false);
         navigate("/");
