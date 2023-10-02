@@ -35,7 +35,7 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`https://bookstore-frontend-1jxu.onrender.com/books/${id}`, data)
+      .put(`https://bookstore-backend-vtm8.onrender.com/books/${id}`, data)
       .then(() => {
         setLoading(false);
         navigate("/");
