@@ -15,10 +15,10 @@ const EditBook = () => {
     setLoading(true);
     axios
       .get(`https://bookstore-backend-vtm8.onrender.com/books/${id}`)
-      .then((responce) => {
-        setAuthor(responce.data.author);
-        setPublishYear(responce.data.publishYear);
-        setTitle(responce.data.title);
+      .then((response) => {
+        setAuthor(response.data.author);
+        setPublishYear(response.data.publishYear);
+        setTitle(response.data.title);
         setLoading(false);
       })
       .catch((err) => {
