@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`${process.env.BASE_URL}`)
+      .get(`${import.meta.env.BASE_URL}/books`)
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
